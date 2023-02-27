@@ -19,8 +19,10 @@ class Block :
             self.datablock.append(inf)
             self.datablockdict.append(inf.__dict__())
             print(f"The {inf.name}\'s Information has successfully stored in Block Number {self.blocknumber}")
+            
+            return True
         else:
-            return -1
+            return False
 
     
     def hash (self) :
